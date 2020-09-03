@@ -104,7 +104,7 @@ import axios from 'axios'
           hobbies: this.hobbyInputs.map(hobby => hobby.value),
           terms: this.terms
         }
-        axios.post('https://vuejs-axios-bab32.firebaseio.com/users.json', formData)
+        axios.post('/users.json', formData)
               .then(res => console.log(res))
               .catch(err => console.log(err))
       }
